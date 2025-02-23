@@ -1,0 +1,25 @@
+{
+  "name": "lab-client",
+  "version": "1.0.0",
+  "description": "Lab Client for WebSocket Communication",
+  "main": "src/client.js",
+  "bin": "src/client.js",
+  "scripts": {
+    "build": "pkg ."
+  },
+  "dependencies": {
+    "ws": "^8.5.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  },
+  "pkg": {
+    "assets": [
+      "src/config/config.js"
+    ],
+    "targets": [
+      "node18-win-x64"
+    ]
+  }
+}
